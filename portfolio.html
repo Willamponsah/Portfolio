@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfoilo</title>
+</head>
+
+<body>
+
+    
+    <div class="navbar-fixed">
+        <nav class="grey lighten-5">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo black-text">Graphic Design Works</a>
+                    <a href="#" data-target="mobile-nav"
+                     class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                   <a class="black-text" href="./index.html"> Home</a>
+                        </li>
+                        <li>
+                            <a class="black-text" href="./portfolio.html"> Portfoilo</a>
+                        </li>
+                        <li>
+                             <a class="black-text" href="./WebPortfolio.html"> Web Portfoilo</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <ul class="sidenav" id="mobile-nav">
+        <li>
+            <a href="#"> home</a>
+        </li>
+        <li>
+            <a href="#"> Portfoilo</a>
+        </li>
+        <li>
+            <a href="#">Contacts</a>
+        </li>
+    </ul>
+
+    <!--Section: Slider -->
+<div class="slider">
+    <ul class="slides">
+        <li>
+            <img src="assets/images/Mighty_lions.jpg">
+            <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente ex modi dolorum illo provident nobis aliquam quae, rerum atque libero?</h5>
+            </div>
+        </li>
+        <li>
+            <img src="assets/images/Buckey_ad.jpg">
+            <!-- random image -->
+            <div class="caption left-align">
+                <h3>Left Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+<!-- Section: Gallery -->
+<section id="gallery" class="section section-gallery scrollspy">
+    <div class="container">
+        <h4 class="center">
+            <span class="teal-text">Graphic Design</span> Gallery
+        </h4>
+        <div class="row">
+            <div class="col s12 m4">
+                <img src="assets/images/logo 2.jpg" alt="" class="materialboxed responsive-img">
+                <h6 class="center">Bebe Mclovia Photography Logo</h6>
+            </div>
+            <div class="col s12 m4">
+                <img src="assets/images/Belwe.jpg" alt="" class="materialboxed responsive-img" id="cardsize">
+                <h6 class="center">Belwe Poster</h6>
+            </div>
+            <div class="col s12 m4">
+                
+                <img src="assets/images/pomo-1.jpg" alt="" class="materialboxed responsive-img"  id="cardsize" >
+            </div>
+           
+        </div>
+
+        <div class="row">
+            <div class="col s12 m4">
+                <img src="assets/images/Buckey_ad.jpg" alt="" class="materialboxed responsive-img">
+            </div>
+            <div class="col s12 m4">
+                <img src="assets/images/Stiritup2.jpg" alt="" class="materialboxed responsive-img">
+            </div>
+            <div class="col s12 m4">
+                <img src="assets/images/Mighty_lions.jpg" alt="" class="materialboxed responsive-img">
+            </div>
+          
+        </div>
+
+        <div class="row">
+            <div class="col s12 m4">
+                <img src="assets/images/Quick_waves_blue.jpg" alt="" class="materialboxed responsive-img">
+            </div>
+            <div class="col s12 m4">
+                <img src="assets/images/Bosei-01.jpg" alt="" class="materialboxed responsive-img">
+            </div>
+            <div class="col s12 m4">
+                <img src="assets/images/redflag.jpg" alt="" class="materialboxed responsive-img">
+            </div>
+            
+           
+
+        </div>
+    </div>
+
+ <footer class="page-footer black">
+            <div class="container ">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Contacts</h5>
+            
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="https://github.com/Willamponsah"><img src="/assets/images/GitHub-Mark-Light-32px.png" alt="GitHub logo"></a></li>
+                            <li><a href="https://linkedin.com/in/william-amponsah-318976148"><img src="/assets/images/In-2C-34px-R.png" alt="Linkedin logo"></a></li>
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2018 Copyright Text
+            
+                </div>
+            </div>
+        </footer>
+</section>
+
+    <!--JavaScript at end of body for optimized loading-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script>
+    // SideNav
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav, {});
+
+    //slider
+    const slider = document.querySelector('.slider');
+    M.Slider.init(slider, {
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000
+    });
+
+
+    // Material Boxed
+    const mb = document.querySelectorAll('.materialboxed');
+    M.Materialbox.init(mb, {});
+
+ document.addEventListener('DOMContentLoaded', function() { var elems = document.querySelectorAll('.chips'); var instances
+= M.Chips.init(elems, options); });
+
+
+</script>
+
+</body>
+
+</html>

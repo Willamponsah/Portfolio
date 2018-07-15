@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfoilo</title>
+</head>
+
+<body>
+
+
+    <div class="navbar-fixed">
+        <nav class="grey lighten-5">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo black-text">Web Design Works</a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a class="black-text" href="./index.html"> Home</a>
+                        </li>
+                        <li>
+                            <a class="black-text" href="./portfolio.html"> Portfoilo</a>
+                        </li>
+                        <li>
+                             <a class="black-text" href="./WebPortfolio.html"> Web Portfoilo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <ul class="sidenav" id="mobile-nav">
+        <li>
+            <a href="#"> home</a>
+        </li>
+        <li>
+            <a href="#"> Portfoilo</a>
+        </li>
+        <li>
+            <a href="#">Contacts</a>
+        </li>
+    </ul>
+
+    <!--Section: Slider -->
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="./assets/images/Settle_in.png">
+                <div class="caption center-align">
+                    
+                    
+                </div>
+            </li>
+            <li>
+                <img src="assets/images/Hangman.png">
+                <!-- random image -->
+                <div class="caption left-align">
+                    
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- Section: Gallery -->
+    <section id="gallery" class="section section-gallery scrollspy">
+        <div class="container">
+            <h4 class="center">
+                <span class="teal-text">Web Design</span> Gallery
+            </h4>
+            <div class="row">
+                <div class="col s12 m4">
+
+                    <a href="https://willamponsah.github.io/Hangman-Game/">
+                    <img src="assets/images/Hangman.png"  alt="" class="materialboxed responsive-img">
+                    <h6 class="center">Hangman Game</h6>
+                    </a>
+                </div>
+                <div class="col s12 m4">
+                <a href="https://willamponsah.github.io/week-4-game/">
+                    <img src="assets/images/Crystal.png"  alt="" class="materialboxed responsive-img">
+                    <h6 class="center">Crystal Collector Game</h6>
+                    </a>
+                </div>
+                <div class="col s12 m4">
+
+                     <a href="https://wynnblevins.github.io/ParkSpot/index.html">
+                    <img src="assets/images/ParkSpot.png"  alt="" class="materialboxed responsive-img">
+                    <h6 class="center">Park Spot</h6>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col s12 m4">
+                     <a href="https://willamponsah.github.io/Bootstrap-Portfolio/">
+                    <img src="assets/images/BootStrap.png"  alt="" class="materialboxed responsive-img">
+                    <h6 class="center">BootStrap Portfoliot</h6>
+                </div>
+                <div class="col s12 m4">
+                     <a href="https://settle-in.herokuapp.com/">
+                    <img src="assets/images/Settle_in.png"  alt="" class="materialboxed responsive-img">
+                    <h6 class="center">BootStrap Portfoliot</h6>
+                </div>
+                <div class="col s12 m4">
+                     <a href="/index.html">
+                    <img src="assets/images/Port.png"  alt="" class="materialboxed responsive-img">
+                    <h6 class="center">Materilize Portfoliot</h6>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <footer class="page-footer black">
+            <div class="container ">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Contacts</h5>
+            
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="https://github.com/Willamponsah"><img src="/assets/images/GitHub-Mark-Light-32px.png" alt="GitHub logo"></a></li>
+                            <li><a href="https://linkedin.com/in/william-amponsah-318976148"><img src="/assets/images/In-2C-34px-R.png" alt="Linkedin logo"></a></li>
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2018 Copyright Text
+            
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        // SideNav
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav, {});
+
+        //slider
+        const slider = document.querySelector('.slider');
+        M.Slider.init(slider, {
+            indicators: false,
+            height: 500,
+            transition: 500,
+            interval: 6000
+        });
+
+
+        // Material Boxed
+        const mb = document.querySelectorAll('.materialboxed');
+        M.Materialbox.init(mb, {});
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.chips');
+            var instances = M.Chips.init(elems, options);
+        });
+    </script>
+
+</body>
+
+</html>

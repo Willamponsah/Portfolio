@@ -1,0 +1,41 @@
+.back{
+    height: 1000px;
+}
+
+.imag{
+   height: 500px;
+   border-radius: 20%;
+}
+
+.texts{
+    font-family: 'Poppins',
+    sans-serif;
+    
+    font-size: 15pt;
+}
+
+.name{
+    font-family: 'Amaranth',
+    sans-serif;
+
+}
+
+ 
+ html,
+ body,
+ .block {
+     height: 100%;
+ }
+
+ nav ul li a:hover,
+ nav ul li a.active {
+     background-color: rgba(0, 0, 0, .1);
+ }
+
+ footer {
+     padding-left: 0;
+ }
+
+ #cardsize{
+     height: 100px;
+ }
